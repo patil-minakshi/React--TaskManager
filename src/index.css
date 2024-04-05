@@ -1,0 +1,130 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+h1 {
+  text-align: center;
+  padding: 10px;
+  display: block;
+  margin: 25px auto;
+  width: 400px;
+  text-align: center;
+  background-color: rgba(255, 253, 246, 1);
+  border-radius: 10px;
+  border: 0.2px solid rgba(249, 228, 45, 1);
+}
+
+.Parent_alltask{
+  background-color: (255, 253, 246, 1);
+  width: 100%;
+  margin: 19px 0 19px 0;
+  height: 100vh;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.Task_Item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border: 0.5px solid brown;
+  border-radius: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  margin: 10px 0;
+}
+
+.Alltask{
+  width: 600px;
+  padding: 10px;
+  padding: 20px 10px;
+}
+button{
+  padding: 10px;
+  width: 150px;
+  border: 0.5px solid rgba(255, 253, 246, 1);
+  border-radius: 10px;
+  margin: 15px 0;
+  background-color: rgba(183, 66, 0, 1);
+  color: white;
+  font-size: 17px;
+
+}
+
+#Done_btn {
+  padding: 10px;
+  width: 150px;
+  border: 0.5px solid rgba(255, 253, 246, 1);
+  border-radius: 10px;
+  margin: 15px 0;
+  background-color: rgba(183, 66, 0, 1);
+  color: white;
+  font-size: 17px;
+  position: relative;
+  left: 70%;
+
+
+}
+
+input[type="checkbox"] {
+   position: relative; 
+  opacity: 50%;
+}
+
+.Task_Item input[type="checkbox"] {
+  display: none; /* Hide default checkbox */
+}
+
+.Task_Item input[type="checkbox"] + label {
+  display: inline-block;
+  width: 20px; /* Adjust width as needed */
+  height: 20px; /* Adjust height as needed */
+  border: 2px solid brown; /* Set border width and color */
+  cursor: pointer;
+}
+
+/* Style checked state */
+.Task_Item input[type="checkbox"]:checked + label {
+  background-color: brown; /* Checked background color */
+}
+
+/* Create checkmark icon */
+.Task_Item input[type="checkbox"] + label:after {
+  content: "\2713"; /* Unicode for checkmark */
+  font-size: 16px; /* Adjust as needed */
+  color: #fff; /* Color of checkmark */
+  display: none;
+}
+
+/* Show checkmark for checked state */
+.Task_Item input[type="checkbox"]:checked + label:after {
+  display: inline-block;
+}
+
+
+#save_Input{
+  padding: 10px;
+  width: 60%;
+  border: none;
+  border-radius: 2px;
+  border-bottom: 0.5px solid brown;
+  opacity: 80%;
+  outline: none;
+}
+
+h3{
+  margin: 10px 0;
+}
+
+.adding_item {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
